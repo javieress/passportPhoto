@@ -1,0 +1,26 @@
+.photo-example {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-example img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.photo-input {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.photo-input input {
+  width: 100%;
+  margin-bottom: 20px;
+
+}
