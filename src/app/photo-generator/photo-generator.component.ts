@@ -1,4 +1,10 @@
 import { CommonModule } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PhotoGeneratorService } from './photo-generator.service';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
@@ -7,7 +13,15 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-photo-generator',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatSelectModule,
+  ],
   templateUrl: './photo-generator.component.html',
   styleUrl: './photo-generator.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

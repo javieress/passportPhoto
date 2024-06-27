@@ -1,18 +1,38 @@
+.photo-generator-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+}
+
 .photo-example {
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: gray;
+  margin: 0;
 }
 
 .photo-example img {
   width: 100%;
   max-width: 200px;
-  margin-bottom: 20px;
+  border: 1px solid #f9f9f9;
 }
 
-.photo-input {
+/* .photo-input {
   margin-bottom: 20px;
   background-color: #f9f9f9;
   padding: 20px;
@@ -23,4 +43,4 @@
   width: 100%;
   margin-bottom: 20px;
 
-}
+} */

@@ -1,23 +1,24 @@
-<div class="photo-example">
-  <h2>Passport photo example</h2>
-  <img src="assets/img/passport-photo-example.jpg" alt="passport photo example">
-</div>
+<div class="photo-generator-content">
+  <section class="photo-example">
+    <img src="assets/img/passport-photo-example.jpg" alt="passport photo example">
+    <p>Ejemplo</p>
+  </section>
 
-<!-- input photo -->
-<div class="photo-input">
-
-  <input type="file" (change)="onFileSelected($event)">
-  <br><br>
-  <label for="name">Nombres:</label>
-  <input type="text" id="name" [(ngModel)]="firstName">
-  <br><br>
-  <label for="lastName">Apellidos:</label>
-  <input type="text" id="lastName" [(ngModel)]="lastName">
-  <br><br>
-  <label for="rut">RUT:</label>
-  <input type="text" id="rut" [(ngModel)]="rut">
-  <br><br>
-  <img *ngIf="imageSrc" [src]="imageSrc" alt="Passport Photo">
-  <br><br>
-  <button *ngIf="imageSrc" (click)="downloadImage(imageSrc.toString())">Descargar Foto</button>
+  <!-- input photo -->
+  <section class="photo-input">
+    <input type="file" (change)="onFileSelected($event)">
+    <br><br>
+    <label for="name">Nombres:</label>
+    <input type="text" id="name" [(ngModel)]="firstName">
+    <br><br>
+    <label for="lastName">Apellidos:</label>
+    <input type="text" id="lastName" [(ngModel)]="lastName">
+    <br><br>
+    <label for="rut">RUT:</label>
+    <input type="text" id="rut" [(ngModel)]="rut">
+    <br><br>
+    <img *ngIf="imageSrc" [src]="imageSrc" alt="Passport Photo">
+    <br><br>
+    <button *ngIf="imageSrc" (click)="downloadImage(imageSrc.toString())">Descargar Foto</button>
+  </section>
 </div>

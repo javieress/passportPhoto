@@ -11,5 +11,5 @@ import { PhotoGeneratorComponent } from './photo-generator/photo-generator.compo
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Chilean passport photo generator';
+  title = 'Generador de fotos tipo Carnet (Chile)';
 }
